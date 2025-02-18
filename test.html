@@ -1160,12 +1160,12 @@ $(document).on(':passagerender', _ => {
 
 （规避检定...）
 
-[[离开|走廊]]</tw-passagedata><tw-passagedata pid="12" name="encounterRoom" tags="" position="825,900" size="100,100">&lt;&lt;set _a = Math.randomInt(3)&gt;&gt;
+[[离开|走廊]]</tw-passagedata><tw-passagedata pid="12" name="encounterRoom" tags="" position="825,900" size="100,100">&lt;&lt;set _a = [Math.floor(Math.random()*3)]&gt;&gt;
 遇到了&lt;&lt;print [&quot;迷路的商人&quot;,&quot;受伤的骑士&quot;,&quot;哭泣的幽灵&quot;][_a]&gt;&gt;...
 &lt;&lt;set $targetPassage = [&quot;merchant&quot;, &quot;knight&quot;, &quot;ghost&quot;][_a]&gt;&gt;
 &lt;&lt;link &quot;帮助对方&quot; $targetPassage&gt;&gt; 
 
-[[离开|走廊]]</tw-passagedata><tw-passagedata pid="13" name="sidequestRoom" tags="" position="950,900" size="100,100">&lt;&lt;set _index = Math.floor(Math.random() * 3)&gt;&gt;
+[[离开|走廊]]</tw-passagedata><tw-passagedata pid="13" name="sidequestRoom" tags="" position="950,900" size="100,100">&lt;&lt;set _index = [Math.floor(Math.random()*3)])&gt;&gt;
 发现&lt;&lt;print [&quot;带锁的宝箱&quot;,&quot;神秘壁画&quot;,&quot;染血的日记&quot;][_index]&gt;&gt;...
 
 &lt;&lt;set $target = [&quot;chestInvestigate&quot;, &quot;muralInvestigate&quot;, &quot;diaryInvestigate&quot;][_index]&gt;&gt;
